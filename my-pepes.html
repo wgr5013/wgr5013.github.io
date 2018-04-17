@@ -63,30 +63,23 @@
             <section class="text-center">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-8 col-md-6">
-                            <div class="cta">
-                                <h2>You don’t have any Pepes.</h2>
-                                <p class="lead">Let's get some in the marketplace.</p>
-                                <a class="btn btn--primary type--uppercase" href="#purchase-template">
-                                    <font color="#ffffff"><span><b>marketplace</b></span></font><br> </a>
+                        <div class="col-sm-6 col-md-4">
+                            <h2>My Pepe Wallet</h2>
+                                <div class="boxed boxed--border cart-total">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <span class="h5">Wallet Balance:</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <span>XXX eth</span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                <button type="submit" class="btn btn--primary">Withdraw</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section class="text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 col-md-6">
-                            <div class="cta">
-                                <h2>My Pepes</h2>
-                                <p class="lead">You have X Pepes in your Pepe Wallet</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    </div></div></div>
+           </section>
                             <div class="container">
                     <div class="row">
  				<div class="col-sm-6">
@@ -98,10 +91,9 @@
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-sm-3 col-md-2 dropdown__content">
-                                                <h5>Select an option</h5>
                                                 <ul class="menu-vertical">
                                                     <li>
-                                                        <a href="#">All</a>
+                                                        <a href="#">Card Number</a>
                                                     </li>
                                                     <li>
                                                         <a href="#">For Sale</a>
@@ -133,13 +125,59 @@
                                 	<div class="feature__body boxed boxed--border">
                                    		<a href="profile.html"><h5>Satoshi Nakamoto Pepe</h5> </a>
                                   			 <span>Amount Issued: <b> 001 </b></span><br>
-                                  			 <span>Rareness Score: <b> 100 </b></span><br>
                                         		<b><a href="#">Price: 0.01 eth </b></a>
                                         		<hr> </hr>
                                         		
                                   			 <span>Amount Owned: <b> X </b></span><br>
-                                                <span>Amount For Sale: <b> X </b></span><br>                  
-                       								<a href="sell-pepes.html"><span class="label"> <i class="icon icon-tag-3 icon--xs stack-interface stack-cart"></i>Sell Now</span> </div></a>
+                                                <span>Amount For Sale: <b> X </b></span>
+                                                <div class="modal-instance">                 
+                       								<a class=" modal-trigger" href="#">
+                       								<span class="label"> <i class="icon icon-tag-3 icon--xs stack-interface stack-cart"></i>
+                       								Sell Now
+                       							</span> 
+                       							</a>
+												<div class="modal-container">
+													<div class="modal-content justify-content-center">
+													<div class="boxed boxed--lg">
+														<form>
+														<div class="col-sm-12 col-md-12 col-xs-12 text-center">
+															<h2>Post For Sale</h2>
+                                                         <div class="col-sm-12 col-md-12 col-xs-12">
+                                                            <input type="number" step="0.001" min="0" class="input-number" value="0.031" placeholder="Enter Amount in ETH">
+                                                          </div>
+                                                          <br /><br />
+                                                          <div class="col-sm-12 col-md-12 col-xs-12">
+                                                            <button type="submit" class="btn btn--primary type--uppercase">Sell this pepe</button>
+                                                           </div>
+                                                           <div class="col-sm-12 col-md-12 col-xs-12">
+                                                           <span class="type--fine-print text-left">Or, if you already have this pepe for sale you can
+                                                             <a href="#">cancel sell order</a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                       </div>         	
+                                                                    <!--end row-->
+                                                      </form>     
+												</div>
+												</div>
+									</div>
+                       		</div>
+                    	</div>
+                    </div>
+                    	<div class="col-sm-4">
+                            <div class="feature feature-1 text-left"> <img alt="Image" src="img/pepe-1.jpg">
+                            	<span class="labelright">Gen 0</span>
+                             	<span class="labelleft">#000</span>
+                                	<div class="feature__body boxed boxed--border">
+                                   		<a href="profile.html"><h5>Satoshi Nakamoto Pepe</h5> </a>
+                                  			 <span>Amount Issued: <b> 001 </b></span><br>
+                                        		Price: 0.01 eth </b>
+                                        		<hr> </hr>
+                                        		
+                                  			 <span>Amount Owned: <b> X </b></span><br>
+                                                <span>Amount For Sale: <b> X </b></span><br>
+                                                <a href="#">Cancel Sale</a>                  
+                       								<span class="labelsale"> <i class="icon icon-tag-3 icon--xs stack-interface stack-cart"></i>For Sale</span> </div>
                             					</div>
                        	 					</div>
                     	<div class="col-sm-4">
@@ -149,23 +187,6 @@
                                 	<div class="feature__body boxed boxed--border">
                                    		<a href="profile.html"><h5>Satoshi Nakamoto Pepe</h5> </a>
                                   			 <span>Amount Issued: <b> 001 </b></span><br>
-                                  			 <span>Rareness Score: <b> 100 </b></span><br>
-                                        		<b><a href="#">Price: 0.01 eth </b></a>
-                                        		<hr> </hr>
-                                        		
-                                  			 <span>Amount Owned: <b> X </b></span><br>
-                                                <span>Amount For Sale: <b> X </b></span><br>                  
-                       								<a href="sell-pepes.html"><span class="label"> <i class="icon icon-tag-3 icon--xs stack-interface stack-cart"></i>Sell Now</span> </div></a>
-                            					</div>
-                       	 					</div>
-                    	<div class="col-sm-4">
-                            <div class="feature feature-1 text-left"> <img alt="Image" src="img/pepe-1.jpg">
-                            	<span class="labelright">Gen 0</span>
-                             	<span class="labelleft">#000</span>
-                                	<div class="feature__body boxed boxed--border">
-                                   		<a href="profile.html"><h5>Satoshi Nakamoto Pepe</h5> </a>
-                                  			 <span>Amount Issued: <b> 001 </b></span><br>
-                                  			 <span>Rareness Score: <b> 100 </b></span><br>
                                         		<b><a href="#">Price: 0.01 eth </b></a>
                                         		<hr> </hr>
                                         		

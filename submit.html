@@ -7,9 +7,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme-greensea.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        
+        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
 
@@ -44,9 +49,9 @@
                                     </ul>
                                 </div>
                                 <div class="bar__module">
-                                	<a class="btn btn--sm type--uppercase" href="#purchase-template"> <span class="btn__text">
+                                	<a class="btn btn--sm type--uppercase" href="my-pepes.html"> <span class="btn__text">
                                      My Pepes</span> </a>
-                                    <a class="btn btn--sm btn--primary type--uppercase" href="#purchase-template"> <span class="btn__text">
+                                    <a class="btn btn--sm btn--primary type--uppercase" href="marketplace.html"> <span class="btn__text">
                                     Marketplace</span> </a>
                                 </div>
                             </div>
@@ -56,54 +61,61 @@
             </div>
         </div>
   
-            <section class="bg--secondary text-center">
-                <div class="container ">
+        <div class="main-container">
+ <section class="text-center height-50">
+                <div class="container pos-vertical-center">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div class="feature feature-1 box-shadow"> 
-                            	<div class="imagebg align-center"> 
-                            		<img alt="Image" src="img/pepe-1.jpg">
-                             			<span class="labelone">#000</span>
-                             			<span class="labeltwo">Gen 0</span></div>
-                                			<div class="feature__body boxed boxed--border text-left">
-                                   				<h5>Satoshi Nakamoto Pepe</h5>
-                                 				<span>Amount Issued: <b> 001 </b></span><br>
-                                  			 <span>Rareness Score: <b> 100 </b></span><br>
-                                 				<a href="#" class="">Price: 0.01 eth</a>
-                       							<a href="#"><span class="label">buy now</span> </div></a>
-                            				</div>
-                        				</div>
-                        			</div>
-                        		</div>
-                        	</div>
-                       	 					</section>
-                    		<section class="switchable">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-8 col-md-7">
-                                            <h2>The Satoshi Nakamoto Pepe</h2>
-                                          
-                                            <p class="lead">
-The Satoshi Nakamoto Pepe Card is the rarest pepe to ever exist on the Ethereum blockchain. The beloved phantom creator of Bitcoin and Blockchain Technology, Satoshi is. This card is a tribute to his selflessness, his modesty, and his genius.                                    </p>
-                                            <a class="btn btn--sm btn--primary type--uppercase" href="#purchase-template"> <span class="btn__text">
-                                    Buy now</span> </a>
+                        <div class="col-sm-8 col-md-6">
+                            <h2>We are now accepting submissions for future generations of Rare Pepe Cards.</h2>
+                            <p class="lead">
+Please submit the Ethereum address associated with your Metamask account, a short story of your pepe card (<a href="profile.html">see example)</a> and a jpg of your original artwork.                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class=" bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                            <div class="row">
+                                <div class="boxed boxed--border">
+                                    <form class="text-left form-email" data-success="Thanks for your enquiry, we'll be in touch shortly." data-error="Please fill in all fields correctly.">
+                                        <div class="col-sm-6">
+                                            <label>Ethereum Address</label>
+                                            <input type="text" name="name" class="validate-required" />
                                         </div>
-                                        <div class="col-sm-4 col-md-3">
-                                            <div class="text-block">
-                                                <h5>Pepe Card Information</h5>
-                                                <p> Name: Satoshi Nakamoto Pepe
-                                                    <br />Generation: 0
-                                                    <br />Amount Issued: 2
-                                                    <br />Pepe #000
-                                                </p>
-                                            </div>
+                                        <div class="col-sm-6">
+                                            <label>Email Address</label>
+                                            <input type="text" name="company" class="validate-required" />
                                         </div>
-                                    </div>
-                                    <!--end of row-->
+                                        <div class="col-sm-6">
+                                            <label>Pepe Name</label>
+                                            <input type="text" name="company" class="validate-required" />
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>Pepe JPG</label>
+                                            <input type="file" name="name" class="validate-required" />
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <label>Pepe Bio / Description</label>
+                                            <textarea rows="5" name="description" class="validate-required"></textarea>
+                                        </div>
+
+                                        <div class="col-sm-12 boxed">
+                                            <button type="submit" class="btn btn--primary type--uppercase">Submit Pepe</button>
+                                        </div>
+                                    </form>
                                 </div>
-                                <!--end of container-->
-                            </section>
-            <footer class="footer-3 text-center-xs space--xs bg--secondary">
+                            </div>
+                            <!--end of row-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>           <footer class="footer-3 bg--secondary text-center-xs space--xs ">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6"> <img alt="Image" class="logo" src="img/logo-dark.png">
@@ -132,8 +144,19 @@ The Satoshi Nakamoto Pepe Card is the rarest pepe to ever exist on the Ethereum 
             </footer>
         </div>
         <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/flickity.min.js"></script>
+        <script src="js/easypiechart.min.js"></script>
         <script src="js/parallax.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/granim.min.js"></script>
+        <script src="js/jquery.steps.min.js"></script>
         <script src="js/countdown.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/scripts.js"></script>
 
